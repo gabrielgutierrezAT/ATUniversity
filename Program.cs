@@ -9,11 +9,13 @@ namespace Selenium_course
         static void Main(string[] args)
         {
             IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("http://www.google.com");
-            driver.FindElement(By.Name("q")).SendKeys("ok" + Keys.Enter);
+            driver.Navigate().GoToUrl("http://www.nba.com");
+            String title = driver.Title;
+            Console.WriteLine("Page Title is: " + title);
             driver.Quit();
 
         }
+
 
 
     }
