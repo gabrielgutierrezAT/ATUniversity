@@ -15,6 +15,7 @@ namespace Selenium_course
             Console.WriteLine("Page Title is: " + title);
             driver.Quit();
 
+
         }
 
 
